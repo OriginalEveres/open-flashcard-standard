@@ -1,0 +1,40 @@
+{
+  "name": "@openflashcard/spec",
+  "version": "0.1.0",
+  "description": "Core TypeScript types for the Open Flashcard Standard",
+  "author": "Matěj \"Matt\" Husák",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OriginalEveres/open-flashcard-standard.git",
+    "directory": "packages/spec"
+  },
+  "homepage": "https://github.com/OriginalEveres/open-flashcard-standard#readme",
+  "keywords": [
+    "flashcard",
+    "openflashcard",
+    "ofs",
+    "types",
+    "typescript"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
