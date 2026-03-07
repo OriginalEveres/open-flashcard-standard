@@ -1,0 +1,43 @@
+{
+  "name": "@open-flashcard/validator",
+  "version": "0.1.0",
+  "description": "Zod-based validator for the Open Flashcard Standard",
+  "author": "Matěj \"Matt\" Husák",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OriginalEveres/open-flashcard-standard.git",
+    "directory": "packages/validator"
+  },
+  "homepage": "https://github.com/OriginalEveres/open-flashcard-standard#readme",
+  "keywords": [
+    "flashcard",
+    "open-flashcard",
+    "ofs",
+    "validator",
+    "zod"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
