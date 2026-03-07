@@ -1,3 +1,4 @@
+import { type CardSet } from '@open-flashcard/spec';
 import { z } from 'zod';
 
 import { CardSchema } from './card.js';
@@ -26,6 +27,4 @@ export const CardSetSchema = z
 
             seen.add(card.id);
         }
-    });
-
-export type CardSet = z.infer<typeof CardSetSchema>;
+    }) satisfies z.ZodType<CardSet>;

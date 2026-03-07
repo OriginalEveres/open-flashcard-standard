@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add .gitignore)",
+      "Bash(git commit -m \"chore: initialize repository\")",
+      "Bash(git add packages/spec/package.json packages/spec/tsconfig.json packages/spec/.npmignore)",
+      "Bash(git commit -m \"feat\\(spec\\): add package.json and tsconfig for npm publishing\")",
+      "Bash(npm view @openflashcard/spec)",
+      "Bash(npm view @open-flashcard/spec)",
+      "Bash(npm view @ofs-standard/spec)",
+      "Bash(npm view @fcpkg/spec)",
+      "Bash(npm view @ofsproject/spec)",
+      "Bash(git add packages/spec/package.json README.md)",
+      "Bash(git commit -m \"chore: rename npm org from @openflashcard to @open-flashcard\")",
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(git add packages/validator/)",
+      "Bash(git commit -m \"feat\\(validator\\): scaffold @open-flashcard/validator package with Zod schemas\")",
+      "Bash(git add package.json eslint.config.mjs .prettierrc .prettierignore)",
+      "Bash(git commit -m \"chore: add ESLint and Prettier config\")",
+      "Bash(node -e \":*)",
+      "Bash(git add -A)",
+      "Bash(git commit -m \"refactor\\(validator\\): check schemas against spec types via satisfies z.ZodType<T>\")"
+    ]
+  }
+}

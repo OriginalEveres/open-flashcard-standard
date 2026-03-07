@@ -14,7 +14,5 @@ export {
     VideoContentSchema,
 } from './schemas/content.js';
 
-// Inferred types
-export type { CardSet } from './schemas/cardset.js';
-export type { Card, HexColor } from './schemas/card.js';
-export type { Content, ImageContent, TextContent, VideoContent } from './schemas/content.js';
+// Types — re-exported from @open-flashcard/spec for convenience
+export type { Card, CardSet, Content, HexColor, ImageContent, TextContent, VideoContent } from '@open-flashcard/spec';
