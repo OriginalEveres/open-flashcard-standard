@@ -1,0 +1,89 @@
+{
+  "id": "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
+  "name": "Bitcoin Basics",
+  "description": "Core concepts behind Bitcoin and how it works.",
+  "author": "OFS Project - Matthew Husak",
+  "tags": ["bitcoin", "crypto", "beginner"],
+  "cards": [
+    {
+      "id": "11111111-1111-4111-8111-111111111111",
+      "front": [
+        { "type": "text", "value": "What is Bitcoin?" }
+      ],
+      "back": [
+        { "type": "text", "value": "A decentralised digital currency that operates without a central bank or single administrator, using peer-to-peer technology." }
+      ],
+      "tags": ["fundamentals"]
+    },
+    {
+      "id": "22222222-2222-4222-8222-222222222222",
+      "front": [
+        { "type": "text", "value": "What is a **blockchain**?" }
+      ],
+      "back": [
+        { "type": "text", "value": "A public, append-only ledger of all Bitcoin transactions, stored as a chain of blocks. Each block references the previous one, making past records tamper-evident." }
+      ],
+      "tags": ["fundamentals"]
+    },
+    {
+      "id": "33333333-3333-4333-8333-333333333333",
+      "front": [
+        { "type": "text", "value": "What is the maximum supply of Bitcoin?" }
+      ],
+      "back": [
+        { "type": "text", "value": "21 million BTC. This hard cap is enforced by the protocol and cannot be changed without consensus from the network." }
+      ],
+      "tags": ["fundamentals", "supply"]
+    },
+    {
+      "id": "44444444-4444-4444-8444-444444444444",
+      "front": [
+        { "type": "text", "value": "What is **mining**?" }
+      ],
+      "back": [
+        { "type": "text", "value": "The process by which new transactions are verified and added to the blockchain. Miners compete to solve a computational puzzle (Proof of Work), and the winner adds the next block and earns a block reward." }
+      ],
+      "tags": ["mining"]
+    },
+    {
+      "id": "55555555-5555-4555-8555-555555555555",
+      "front": [
+        { "type": "text", "value": "What is a **halving**?" }
+      ],
+      "back": [
+        { "type": "text", "value": "An event that cuts the block reward in half, occurring every 210,000 blocks (~4 years). It controls Bitcoin's issuance rate and is built into the protocol." }
+      ],
+      "tags": ["mining", "supply"]
+    },
+    {
+      "id": "66666666-6666-4666-8666-666666666666",
+      "front": [
+        { "type": "text", "value": "What is a **private key**?" }
+      ],
+      "back": [
+        { "type": "text", "value": "A secret 256-bit number that proves ownership of Bitcoin. Anyone with access to your private key can spend your funds. It should never be shared." }
+      ],
+      "tags": ["wallets", "security"]
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777777",
+      "front": [
+        { "type": "text", "value": "What does **\"not your keys, not your coins\"** mean?" }
+      ],
+      "back": [
+        { "type": "text", "value": "If you don't hold your own private keys (e.g. your Bitcoin is held on an exchange), you don't truly own it — the custodian does." }
+      ],
+      "tags": ["wallets", "security"]
+    },
+    {
+      "id": "88888888-8888-4888-8888-888888888888",
+      "front": [
+        { "type": "text", "value": "What is the **Lightning Network**?" }
+      ],
+      "back": [
+        { "type": "text", "value": "A layer-2 payment protocol built on top of Bitcoin. It enables fast, low-fee transactions by routing payments through a network of off-chain payment channels." }
+      ],
+      "tags": ["layer-2", "scaling"]
+    }
+  ]
+}
