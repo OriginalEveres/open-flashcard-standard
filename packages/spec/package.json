@@ -1,5 +1,5 @@
 {
-  "name": "@openflashcard/spec",
+  "name": "@open-flashcard/spec",
   "version": "0.1.0",
   "description": "Core TypeScript types for the Open Flashcard Standard",
   "author": "Matěj \"Matt\" Husák",
@@ -12,7 +12,7 @@
   "homepage": "https://github.com/OriginalEveres/open-flashcard-standard#readme",
   "keywords": [
     "flashcard",
-    "openflashcard",
+    "open-flashcard",
     "ofs",
     "types",
     "typescript"

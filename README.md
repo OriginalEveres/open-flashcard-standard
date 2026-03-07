@@ -13,8 +13,8 @@ OFS defines a minimal, interoperable structure for flashcard content — what ca
 | Version           | `0.1.0`                                    |
 | Primary format    | JSON (`.json`)                             |
 | Optional bundle   | `.fcpkg` (renamed `.zip`, for local media) |
-| npm org           | `@openflashcard`                           |
-| Packages       | `@openflashcard/spec`, `@openflashcard/validator` |
+| npm org           | `@open-flashcard`                           |
+| Packages       | `@open-flashcard/spec`, `@open-flashcard/validator` |
 | License        | MIT                                        |
 | Repo           | https://github.com/OriginalEveres/open-flashcard-standard |
 
@@ -35,8 +35,8 @@ Existing flashcard formats are proprietary, tightly coupled to their apps, or ca
 
 | Package                      | Description                                   |
 |------------------------------|-----------------------------------------------|
-| `@openflashcard/spec`        | Core TypeScript types (no runtime dependency) |
-| `@openflashcard/validator`   | Zod-based schema validation                   |
+| `@open-flashcard/spec`        | Core TypeScript types (no runtime dependency) |
+| `@open-flashcard/validator`   | Zod-based schema validation                   |
 
 ---
 
@@ -106,9 +106,9 @@ open-flashcard-standard/
 Goal: a stable, publishable foundation that developers can build on.
 
 - [x] Core spec — card and card set schema (`SPEC.md`)
-- [x] TypeScript types (`@openflashcard/spec`)
-- [ ] Zod-based validator (`@openflashcard/validator`) — validate any JSON against the spec
-- [ ] Publish both packages to npm under `@openflashcard`
+- [x] TypeScript types (`@open-flashcard/spec`)
+- [ ] Zod-based validator (`@open-flashcard/validator`) — validate any JSON against the spec
+- [ ] Publish both packages to npm under `@open-flashcard`
 - [ ] Spec reaches `v1.0.0` (no more breaking changes)
 
 ### Milestone 2 — Website & editor
