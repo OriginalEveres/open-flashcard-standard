@@ -1,4 +1,4 @@
-import { Card } from "./card";
+import { Card } from "./card.js";
 
 /**
  * A named, ordered collection of cards.
