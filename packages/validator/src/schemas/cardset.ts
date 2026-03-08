@@ -1,12 +1,13 @@
 import { type CardSet } from '@open-flashcard/spec';
 import { z } from 'zod';
 
+import { ValidationErrorCode } from '../errors.js';
 import { CardSchema } from './card.js';
 
 export const CardSetSchema = z
     .object({
-        id: z.string().min(1, 'CardSet id must not be empty'),
-        name: z.string().min(1, 'CardSet name must not be empty'),
+        id: z.string().min(1, ValidationErrorCode.CARDSET_ID_EMPTY),
+        name: z.string().min(1, ValidationErrorCode.CARDSET_NAME_EMPTY),
         description: z.string().optional(),
         author: z.string().optional(),
         cards: z.array(CardSchema),
@@ -20,7 +21,7 @@ export const CardSetSchema = z
             if (seen.has(card.id)) {
                 ctx.addIssue({
                     code: z.ZodIssueCode.custom,
-                    message: `Duplicate card id "${card.id}"`,
+                    message: ValidationErrorCode.CARD_ID_DUPLICATED,
                     path: ['cards', index, 'id'],
                 });
             }
