@@ -1,5 +1,5 @@
-export { validateCard } from './card/schema.js';
-export { validateCardSet } from './cardset/schema.js';
+export { validateCard } from './card/validator.js';
+export { validateCardSet } from './cardset/validator.js';
 
 export type { ValidationFailure, ValidationIssue, ValidationResult, ValidationSuccess } from './result.js';
 

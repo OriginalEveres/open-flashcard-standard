@@ -3,7 +3,6 @@ import { z } from 'zod';
 
 import { CardSchema } from '../card/schema.js';
 import { ValidationErrorCode } from '../errors.js';
-import { type ValidationResult, mapIssue } from '../result.js';
 
 export const CardSetSchema = z
     .object({
@@ -30,16 +29,3 @@ export const CardSetSchema = z
             seen.add(card.id);
         }
     }) satisfies z.ZodType<CardSet>;
-
-export function validateCardSet(input: unknown): ValidationResult<CardSet> {
-    const result = CardSetSchema.safeParse(input);
-
-    if (result.success) {
-        return { success: true, data: result.data };
-    }
-
-    return {
-        success: false,
-        issues: result.error.issues.map(mapIssue),
-    };
-}
